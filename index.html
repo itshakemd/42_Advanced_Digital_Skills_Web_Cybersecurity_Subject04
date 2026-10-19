@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itshakemd</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>Itshakemd</h1>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+
+            <button id="theme-button" type="button">
+                Dark Mode
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <div class="about-container">
+                <div>
+                    <h2>Hello, I'm Hakem.</h2>
+                    <p>
+                        Independent software developer
+                        and open-source contributor.
+                    </p>
+                    <p>
+                        I enjoy creating applications,
+                        solving problems, and learning
+                        new technologies.
+                    </p>
+                    <a href="#projects">View My Projects</a>
+                </div>
+
+                <img
+                    src="images/HD.svg"
+                    alt="my avatar"
+                    class="profile-image"
+                >
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <div class="card-container">
+                <article class="card">
+                    <h3>HTML</h3>
+                </article>
+
+                <article class="card">
+                    <h3>CSS</h3>
+                </article>
+
+                <article class="card">
+                    <h3>JavaScript</h3>
+                </article>
+
+                <article class="card">
+                    <h3>Git</h3>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>Selected projects and tools I've built.</p>
+
+            <div class="card-container">
+
+                <article class="card">
+                    <h3>DocUp</h3>
+                    <p>DocUp is a lightweight personal blog and knowledge base built with Next.js, React, and Notion.</p>
+                    <a class="more-link" href="https://github.com/itshakemd/DocUp" target="_blank" rel="noopener noreferrer">More</a>
+                </article>
+
+                <article class="card">
+                    <h3>UI Recipes</h3>
+                    <p>A growing collection of practical UI design lessons.</p>
+                    <a class="more-link" href="https://github.com/itshakemd/UI-Recipes" target="_blank" rel="noopener noreferrer">More</a>
+                </article>
+
+                <article class="card">
+                    <h3>Resight</h3>
+                    <p>A browser extension that helps you understand and track how you spend your time on the web.</p>
+                    <a class="more-link" href="https://resight.itshd.net" target="_blank" rel="noopener noreferrer">More</a>
+                </article>
+
+                <article class="card">
+                    <h3>GitHub README</h3>
+                    <p>A polished Obsidian plugin that lets you browse your repositories and open a README in a Markdown editor.</p>
+                    <a class="more-link" href="https://community.obsidian.md/plugins/github-readme" target="_blank" rel="noopener noreferrer">More</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Contributing to open source</li>
+                <li>Learning new technologies</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Want to get in touch?</p>
+            <p><a href="mailto:itshakemd@gmail.com">Email me</a></p>
+            <p>
+                <a href="https://github.com/itshakemd" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </p>
+        </section>
+
+        <section id="feedback">
+            <h2>Leave Your Feedback</h2>
+            <p>
+                Have something to say?
+                Leave a message below!
+            </p>
+
+            <form id="feedback-form">
+                <label for="visitor-name">Your Name</label>
+                <input
+                    type="text"
+                    id="visitor-name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="visitor-message">Your Message</label>
+                <textarea
+                    id="visitor-message"
+                    placeholder="Write your feedback..."
+                    rows="4"
+                    required
+                ></textarea>
+
+                <button type="button" id="post-feedback">
+                    Post Feedback
+                </button>
+            </form>
+
+            <p id="feedback-status"></p>
+
+            <h3>Visitor Messages</h3>
+            <div id="feedback-list"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Hakem. All rights reserved.</p>
+        <a
+            href="https://github.com/itshakemd"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub
+        </a>
+    </footer>
+
+</body>
+</html>
